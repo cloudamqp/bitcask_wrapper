@@ -1,11 +1,11 @@
 APP_NAME:=bitcask
 DO_NOT_GENERATE_APP_FILE:=true
 
-UPSTREAM_GIT:=git://github.com/basho/bitcask.git
-UPSTREAM_REVISION:=08c765d56e0da5ba9f274f7be6c088630ee61c0b
+UPSTREAM_GIT:=git://github.com/cloudamqp/bitcask.git
+UPSTREAM_REVISION:=1.6
 RETAIN_ORIGINAL_VERSION:=true
 
-ORIGINAL_APP_FILE=$(CLONE_DIR)/ebin/$(APP_NAME).app
+ORIGINAL_APP_FILE=$(CLONE_DIR)/src/bitcask.app.src
 
 LIBRARY:=$(CLONE_DIR)/priv/bitcask.so
 
@@ -35,3 +35,4 @@ $(PACKAGE_DIR)+pre-run:: $(PACKAGE_DIR)/dist/.done.$(PACKAGE_VERSION)
 $(PACKAGE_DIR)+pre-test:: $(PACKAGE_DIR)+pre-run
 
 endef
+

@@ -2,3 +2,4 @@ bitcask_wrapper-git
 build
 dist
 ebin
+hash.mk

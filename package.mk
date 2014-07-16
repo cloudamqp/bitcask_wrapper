@@ -1,10 +1,11 @@
 APP_NAME:=bitcask
-DO_NOT_GENERATE_APP_FILE:=true
 
 UPSTREAM_GIT:=git://github.com/cloudamqp/bitcask.git
 UPSTREAM_REVISION:=1.6
-RETAIN_ORIGINAL_VERSION:=true
 
+ORIGINAL_VERSION:=1.6
+RETAIN_ORIGINAL_VERSION:=true
+DO_NOT_GENERATE_APP_FILE:=true
 ORIGINAL_APP_FILE=$(CLONE_DIR)/src/bitcask.app.src
 
 LIBRARY:=$(CLONE_DIR)/priv/bitcask.so
